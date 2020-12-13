@@ -1,0 +1,6 @@
+query {
+  Customer {
+    id,
+    name
+  }
+}

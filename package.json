@@ -1,0 +1,58 @@
+{
+  "name": "apollo-persisted-query",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.3.6",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-link-http": "^1.5.17",
+    "apollo-link-persisted-queries": "^0.2.2",
+    "apollo-server": "^2.19.0",
+    "apollo-server-core": "^2.19.0",
+    "graphql": "^15.4.0",
+    "graphql-import": "^1.0.2",
+    "graphql.macro": "^1.4.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start:server": "nodemon --exec babel-node apps/server/index.js",
+    "start:client": "react-app-rewired start",
+    "build:client": "GENERATE_SOURCEMAP=false react-app-rewired build",
+    "test:client": "react-app-rewired test",
+    "eject:client": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/preset-env": "^7.12.10",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1",
+    "react-app-rewired": "^2.1.8"
+  }
+}

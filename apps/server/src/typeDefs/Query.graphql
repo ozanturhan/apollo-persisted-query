@@ -1,0 +1,5 @@
+# import Query from './Customer.graphql'
+
+type Query {
+    Customer: [Customer]
+}
